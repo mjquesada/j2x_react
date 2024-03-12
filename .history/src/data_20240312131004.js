@@ -119,12 +119,10 @@ export const rosterFilterOptions = [
 ];
 
 export const mapFilterOptions = [
-  { id: 1, label: 'AoR', value: "option1"},
-  { id: 2, label: 'Country', value: "option1"},
-  { id: 3, label: 'Branch', value: "option1"},
-  { id: 4, label: 'Personnel Types', value: "option1"},
-  { id: 5, label: 'Service Skill', value: "option1"},
-]
+  { label: "Option 1", value: "option1", id: 1 },
+  { label: "Option 2", value: "option2", id: 2 },
+  // Add more options as needed
+];
 
 // data.js
 export const placeholderTableData = [

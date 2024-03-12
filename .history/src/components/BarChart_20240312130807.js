@@ -8,7 +8,7 @@ const BarChart = ({ series, options }) => {
         options={options}
         series={series}
         type="bar"
-        height={250}
+        height={350}
       />
     </div>
   );

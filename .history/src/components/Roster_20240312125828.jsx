@@ -12,12 +12,17 @@ import {
 } from "../data";
 
 const Roster = () => {
-  const series = [
-    {
-      name: rosterBarChartData.datasets[0].label,
-      data: rosterBarChartData.datasets[0].data,
+  const options = {
+    scales: {
+      x: {
+        type: "category",
+      },
+      y: {
+        type: "linear",
+        beginAtZero: true,
+      },
     },
-  ];
+  };
 
   const columns = React.useMemo(
     () => [
@@ -54,7 +59,7 @@ const Roster = () => {
           <MetricDisplay title="Personnel" value="45" />
         </div>
         <div className="bar-chart">
-          <BarChart series={series} options={rosterBarChartData.options} />
+          <BarChart data={rosterBarChartData} />
         </div>
       </div>
 

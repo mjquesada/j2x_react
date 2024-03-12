@@ -119,12 +119,10 @@ export const rosterFilterOptions = [
 ];
 
 export const mapFilterOptions = [
-  { id: 1, label: 'AoR', value: "option1"},
-  { id: 2, label: 'Country', value: "option1"},
-  { id: 3, label: 'Branch', value: "option1"},
-  { id: 4, label: 'Personnel Types', value: "option1"},
-  { id: 5, label: 'Service Skill', value: "option1"},
-]
+  { label: "Option 1", value: "option1", id: 1 },
+  { label: "Option 2", value: "option2", id: 2 },
+  // Add more options as needed
+];
 
 // data.js
 export const placeholderTableData = [
@@ -142,37 +140,6 @@ export const rosterBarChartData = {
       // Other dataset properties
     },
   ],
-  options: {
-    chart: {
-      type: "bar",
-    },
-    plotOptions: {
-      bar: {
-        horizontal: false,
-        columnWidth: "55%",
-        endingShape: "rounded",
-      },
-    },
-    dataLabels: {
-      enabled: false,
-    },
-    stroke: {
-      show: true,
-      width: 2,
-      colors: ["transparent"],
-    },
-    xaxis: {
-      categories: ["January", "February", "March", "April", "May", "June"],
-    },
-    yaxis: {
-      title: {
-        text: "Sales",
-      },
-    },
-    fill: {
-      opacity: 1,
-    },
-  },
 };
 
 export const forceBarChartData1 = {
@@ -190,43 +157,6 @@ export const forceBarChartData1 = {
       // Other dataset properties
     },
   ],
-  options: {
-    chart: {
-      type: "bar",
-    },
-    plotOptions: {
-      bar: {
-        horizontal: false,
-        columnWidth: "55%",
-        endingShape: "rounded",
-      },
-    },
-    dataLabels: {
-      enabled: false,
-    },
-    stroke: {
-      show: true,
-      width: 2,
-      colors: ["transparent"],
-    },
-    xaxis: {
-      categories: [
-        "Category A",
-        "Category B",
-        "Category C",
-        "Category D",
-        "Category E",
-      ],
-    },
-    yaxis: {
-      title: {
-        text: "Force 1 Data",
-      },
-    },
-    fill: {
-      opacity: 1,
-    },
-  },
 };
 
 export const forceBarChartData2 = {
@@ -238,35 +168,4 @@ export const forceBarChartData2 = {
       // Other dataset properties
     },
   ],
-  options: {
-    chart: {
-      type: "bar",
-    },
-    plotOptions: {
-      bar: {
-        horizontal: false,
-        columnWidth: "55%",
-        endingShape: "rounded",
-      },
-    },
-    dataLabels: {
-      enabled: false,
-    },
-    stroke: {
-      show: true,
-      width: 2,
-      colors: ["transparent"],
-    },
-    xaxis: {
-      categories: ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5"],
-    },
-    yaxis: {
-      title: {
-        text: "Force 2 Data",
-      },
-    },
-    fill: {
-      opacity: 1,
-    },
-  },
 };

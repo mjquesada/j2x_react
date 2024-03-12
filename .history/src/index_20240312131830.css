@@ -141,17 +141,9 @@ body {
   /* Additional styling */
 }
 
-.metric-title {
-  font-size: 35px;
-}
-
-.metric-value {
-  font-size: 28px;
-}
-
 .bar-chart {
   width: 100%; /* Ensure the chart takes up the full width */
-  padding: 20px 20px 45px 20px;
+  padding: 20px 20px 40px 20px;
   /* Additional styling */
 }
 
@@ -295,14 +287,6 @@ body {
   padding-right: 20px;
 }
 
-.bar-chart-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; /* Adjust as needed */
-  gap: 20px; /* Adds space between the charts */
-  width: 100%; /* Ensure it takes the full width */
-}
-
 .force-row {
   display: flex;
   justify-content: space-between;
@@ -330,5 +314,7 @@ body {
 .map-container {
   display: flex;
   justify-content: center;
-  padding: 20px;
+  width: 100%;
+  padding: 0;
 }
+

@@ -330,5 +330,6 @@ body {
 .map-container {
   display: flex;
   justify-content: center;
-  padding: 20px;
+  width: 100%;
+  padding: 0;
 }

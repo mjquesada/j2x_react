@@ -2,7 +2,7 @@ import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
 const Map = () => {
-  const position = [41.0136, 28.9551]; // Example coordinates
+  const position = [51.505, -0.09]; // Example coordinates
 
   return (
     <MapContainer

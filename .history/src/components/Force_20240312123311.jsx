@@ -6,27 +6,16 @@ import Button from "./Button";
 import Map from "./Map";
 import Table from "./Table";
 
-import {
-  mapFilterOptions,
-  placeholderTableData,
-  forceBarChartData1,
-  forceBarChartData2,
-} from "../data";
+import { mapFilterOptions, placeholderTableData } from "../data";
 
 const Force = () => {
   const metric1 = { title: "Personnel Count", value: "1000" };
   const metric2 = { title: "Country Count", value: "500" };
-
-  const options = {
-    scales: {
-      x: {
-        type: "category",
-      },
-      y: {
-        type: "linear",
-        beginAtZero: true,
-      },
-    },
+  const chartData1 = {
+    /* Chart data for the first chart */
+  };
+  const chartData2 = {
+    /* Chart data for the second chart */
   };
 
   const handleFilterChange = (selectedOptions) => {
@@ -35,7 +24,7 @@ const Force = () => {
 
   const columns = React.useMemo(
     () => [
-      { Header: "Name", accessor: "name" },
+      { Header: "Name", accessor: "ame" },
       { Header: "Age", accessor: "age" },
       { Header: "Location", accessor: "location" },
       { Header: "Email", accessor: "email" },
@@ -65,14 +54,8 @@ const Force = () => {
 
         {/* Bar Charts */}
         <div className="bar-chart-container">
-          <BarChart
-            series={forceBarChartData1.datasets}
-            options={forceBarChartData1.options}
-          />
-          <BarChart
-            series={forceBarChartData2.datasets}
-            options={forceBarChartData2.options}
-          />
+          {/* <BarChart chartData={chartData1} />
+          <BarChart chartData={chartData2} /> */}
         </div>
       </div>
 

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-const Dropdown = ({ options, onChange, label }) => {
-  const [selectedOption, setSelectedOption] = useState(label ? { label: label, value: '' } : null);
+const Dropdown = ({ options, onChange }) => {
+  const [selectedOption, setSelectedOption] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
 
   const handleOptionClick = (option) => {
@@ -13,7 +13,7 @@ const Dropdown = ({ options, onChange, label }) => {
   return (
     <div className="dropdown-container">
       <div className="dropdown-select" onClick={() => setIsOpen(!isOpen)}>
-        {selectedOption ? selectedOption.label : 'Select'}
+        {selectedOption ? selectedOption.label : selectedOption.label}
       </div>
       {isOpen && (
         <div className="dropdown-options">

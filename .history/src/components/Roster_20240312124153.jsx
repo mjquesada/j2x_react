@@ -8,16 +8,17 @@ import Button from "./Button";
 import {
   rosterFilterOptions,
   placeholderTableData,
-  rosterBarChartData,
+  barChartData,
 } from "../data";
 
 const Roster = () => {
-  const series = [
-    {
-      name: rosterBarChartData.datasets[0].label,
-      data: rosterBarChartData.datasets[0].data,
+  const barChartOptions = {
+    scales: {
+      y: {
+        beginAtZero: true,
+      },
     },
-  ];
+  };
 
   const columns = React.useMemo(
     () => [
@@ -54,7 +55,7 @@ const Roster = () => {
           <MetricDisplay title="Personnel" value="45" />
         </div>
         <div className="bar-chart">
-          <BarChart series={series} options={rosterBarChartData.options} />
+          <BarChart data={barChartData} options={barChartOptions} />
         </div>
       </div>
 

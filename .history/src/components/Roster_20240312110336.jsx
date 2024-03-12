@@ -4,20 +4,23 @@ import BarChart from "./BarChart";
 import Table from "./Table";
 import Dropdown from "./Dropdown";
 import Button from "./Button";
-
-import {
-  rosterFilterOptions,
-  placeholderTableData,
-  rosterBarChartData,
-} from "../data";
+import { rosterFilterOptions, placeholderTableData } from "../data";
 
 const Roster = () => {
-  const series = [
-    {
-      name: rosterBarChartData.datasets[0].label,
-      data: rosterBarChartData.datasets[0].data,
-    },
-  ];
+  // Example chart data for BarChart
+  const chartData = {
+    labels: ["Label 1", "Label 2", "Label 3", "Label 4", "Label 5"],
+    datasets: [
+      {
+        label: "Dataset 1",
+        data: [10, 20, 15, 25, 30],
+        backgroundColor: "rgba(75,192,192,0.2)",
+        borderColor: "rgba(75,192,192,1)",
+        borderWidth: 1,
+      },
+      // Add more datasets if needed
+    ],
+  };
 
   const columns = React.useMemo(
     () => [
@@ -54,7 +57,7 @@ const Roster = () => {
           <MetricDisplay title="Personnel" value="45" />
         </div>
         <div className="bar-chart">
-          <BarChart series={series} options={rosterBarChartData.options} />
+          <BarChart key="uniqueBarChartKey" chartData={chartData} />
         </div>
       </div>
 

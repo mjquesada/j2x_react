@@ -4,20 +4,9 @@ import BarChart from "./BarChart";
 import Table from "./Table";
 import Dropdown from "./Dropdown";
 import Button from "./Button";
-
-import {
-  rosterFilterOptions,
-  placeholderTableData,
-  rosterBarChartData,
-} from "../data";
+import { rosterFilterOptions, placeholderTableData, barChartData } from "../data";
 
 const Roster = () => {
-  const series = [
-    {
-      name: rosterBarChartData.datasets[0].label,
-      data: rosterBarChartData.datasets[0].data,
-    },
-  ];
 
   const columns = React.useMemo(
     () => [
@@ -54,7 +43,7 @@ const Roster = () => {
           <MetricDisplay title="Personnel" value="45" />
         </div>
         <div className="bar-chart">
-          <BarChart series={series} options={rosterBarChartData.options} />
+          <BarChart key="uniqueBarChartKey" chartData={barChartData} />
         </div>
       </div>
 

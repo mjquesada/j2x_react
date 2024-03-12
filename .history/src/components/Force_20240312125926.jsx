@@ -65,14 +65,8 @@ const Force = () => {
 
         {/* Bar Charts */}
         <div className="bar-chart-container">
-          <BarChart
-            series={forceBarChartData1.datasets}
-            options={forceBarChartData1.options}
-          />
-          <BarChart
-            series={forceBarChartData2.datasets}
-            options={forceBarChartData2.options}
-          />
+          <BarChart data={forceBarChartData1} options={options} />
+          <BarChart data={forceBarChartData2} options={options} />
         </div>
       </div>
 
