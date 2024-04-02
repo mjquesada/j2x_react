@@ -21,9 +21,9 @@ export const boxData = [
     id: 2,
     title: "AoR Breakdown",
     content: [
-      { label: "AFRICOM", value: 700 },
-      { label: "EUCOM", value: 800 },
-      { label: "SOCCOM", value: 900 },
+      { label: "AFRICOM", value: 100 },
+      { label: "EUCOM", value: 500 },
+      { label: "SOCCOM", value: 1200 },
     ],
   },
 ];
